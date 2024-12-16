@@ -32,3 +32,7 @@ This will build and execute the SQL commands to generate the schema.
 > **NOTE:**\
 > If you have already run this script once, and want to back up the data, make sure
 > to use `pg_dump` command to dump your schema beforehand.
+
+## Current database visualized
+
+![image](images/current-db.png "Current Database Relationship")
