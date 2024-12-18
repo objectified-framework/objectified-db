@@ -13,13 +13,3 @@ CREATE TABLE obj.user (
     email_address VARCHAR(255) NOT NULL,
     data JSON
 );
-
--- Session
-
-DROP TABLE IF EXISTS obj.session;
-CREATE TABLE obj.session (
-    id BIGSERIAL NOT NULL PRIMARY KEY,
-    user_id BIGINT NOT NULL REFERENCES obj.user(id) ON DELETE CASCADE,
-    ip_address INET NOT NULL,
-    data JSON
-);
